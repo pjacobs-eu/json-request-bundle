@@ -2,12 +2,12 @@
 
 namespace SymfonyBundles\JsonRequestBundle\EventListener;
 
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
+use Symfony\Component\HttpKernel\Event\ResponseEvent;
 
 interface RequestListenerInterface
 {
     /**
-     * @param GetResponseEvent $event
+     * @param ResponseEvent $event
      */
-    public function onKernelRequest(GetResponseEvent $event);
+    public function onKernelRequest(ResponseEvent $event);
 }
